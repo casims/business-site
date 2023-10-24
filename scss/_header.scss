@@ -1,0 +1,48 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+};
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+};
+
+.title-container {
+    display: flex;
+};
+
+.title-container svg {
+    margin: auto;
+    height: 2rem;
+    width: 2rem;
+};
+
+header h1 {
+    display: inline;
+    margin: 0;
+};
+
+#nav-button {
+    background-color: transparent;
+    border: none;
+    margin: auto 0;
+    padding-top: .1rem;
+};
+
+#nav-button svg {
+    margin: auto;
+    height: 2rem;
+    width: 2rem;
+};
+
+.close-menu-button {
+    display: none;
+};
+
+header .nav-container {
+    display: none;
+};
