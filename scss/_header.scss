@@ -5,10 +5,17 @@ header {
     left: 0;
 };
 
-header nav {
+header #nav-container {
+    height: 5.5rem;
+    padding: 1.5rem 1rem;
+};
+
+header .nav-bar-container {
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem 1rem;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
 };
 
 .title-container {
@@ -43,6 +50,6 @@ header h1 {
     display: none;
 };
 
-header .nav-container {
+header .nav-menu-container {
     display: none;
 };
