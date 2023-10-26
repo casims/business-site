@@ -5,16 +5,15 @@ const navCont = {
     navListeners: function() {
         document.getElementById('nav-button').addEventListener('click', function() {
             navCont.menuExpanded = !navCont.menuExpanded;
-            console.log(this.menuExpanded);
             navCont.toggleMenu();
         });
     },
     toggleMenu: function() {
         const navTarget = document.getElementById('nav-container');
         if (this.menuExpanded === true) {
-            navTarget.style.height = '100vh';
+            navTarget.classList.add('menu-open');
         } else {
-            navTarget.style.height = '5.5rem';
+            navTarget.classList.remove('menu-open');
         };
     },
 };
