@@ -20,7 +20,7 @@ header {
 }
 header #nav-container {
   height: 5.5rem;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem;
   overflow: hidden;
 }
 header #nav-container .nav-bar-container {
@@ -63,6 +63,7 @@ header #nav-container .nav-menu-container {
 #nav-container.menu-open {
   height: 100vh;
   background-color: #181818;
+  position: relative;
 }
 #nav-container.menu-open h1, #nav-container.menu-open a {
   color: white;
@@ -77,7 +78,31 @@ header #nav-container .nav-menu-container {
   display: inline;
 }
 #nav-container.menu-open .nav-menu-container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 2.5rem);
+}
+#nav-container.menu-open .nav-menu-container ul {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  margin: 0 0 9rem;
+  list-style: none;
+  padding: 0;
+}
+#nav-container.menu-open .nav-menu-container ul li {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+#nav-container.menu-open .nav-menu-container ul li a {
+  text-decoration: none;
+}
+#nav-container.menu-open .nav-menu-container button {
+  width: 5rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 999px;
 }
 
 .hero-section.home {
