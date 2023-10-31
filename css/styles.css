@@ -11,6 +11,9 @@ h2, h3, h4, h5, h6, p, a, button {
 body {
   position: relative;
 }
+body main > section {
+  padding: 1.5rem;
+}
 
 header {
   position: fixed;
@@ -108,7 +111,15 @@ header #nav-container .nav-menu-container {
 .hero-section.home {
   width: 100%;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url("../media/background.webp");
+  background-size: cover;
+  background-position-x: 35%;
+}
+.hero-section.home .text-container .hero-text {
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
