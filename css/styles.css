@@ -17,6 +17,7 @@ body main > section {
 
 header {
   position: fixed;
+  z-index: 99;
   top: 0;
   right: 0;
   left: 0;
@@ -114,12 +115,28 @@ header #nav-container .nav-menu-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
   background-image: url("../media/background.webp");
   background-size: cover;
   background-position-x: 35%;
 }
 .hero-section.home .text-container .hero-text {
   font-size: 2rem;
+}
+.hero-section.home button {
+  width: 1.5rem;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.hero-section.home .main-section-tab {
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  left: 1rem;
+  height: 4rem;
+  border-radius: 3rem 3rem 0 0;
+  background-color: #181818;
 }
 
 /*# sourceMappingURL=styles.css.map */
