@@ -24,12 +24,14 @@ header {
                     height: 2rem;
                     width: 2rem;
                     path {
+                        fill: $black;
                         transition: fill 0.3s ease;
                     };
                 };
                 h1 {
                     display: inline;
                     margin: 0;
+                    color: $black;
                     transition: color 0.3s ease;
                 };
             };
@@ -43,6 +45,7 @@ header {
                     height: 2rem;
                     width: 2rem;
                     path {
+                        fill: $black;
                         transition: fill 0.3s ease;
                     };
                 };
@@ -60,23 +63,30 @@ header {
 header div#nav-container.menu-open {
     height: 100vh;
     background-color: $blacktrans;
-            position: relative;
-    h1, a {
-        color: $white;
-    };
-    svg {
-        path {
-            fill: $white;
+    position: relative;
+    .nav-bar-container {
+        h1 {
+            color: $white;
         };
-    };
-    #nav-button {
-        svg.open-menu-button {
-            display: none;
+        svg {
+            path {
+                fill: $white;
+            };
         };
-        svg.close-menu-button {
-            display: inline;
+        #nav-button {
+            svg {
+                path {
+                    fill: $white;
+                };
+                &.open-menu-button {
+                    display: none;
+                };
+                &.close-menu-button {
+                    display: inline;
+                };
+            };
         };
-    };
+    }
     .nav-menu-container {
         display: flex;
         flex-direction: column;
@@ -92,6 +102,7 @@ header div#nav-container.menu-open {
                 font-size: 2.2rem;
                 margin-bottom: .8rem;
                 a {
+                    color: $white;
                     text-decoration: none;
                 };
             };
@@ -109,17 +120,19 @@ header div#nav-container.menu-open {
 header.stickied {
     #nav-container {
         background-color: $black;
-        .title-container {
-            svg path {
-                fill: $white;
+        .nav-bar-container {
+            .title-container {
+                svg path {
+                    fill: $white;
+                };
+                h1 {
+                    color: $white;
+                }
             };
-            h1 {
-                color: $white;
-            }
-        };
-        #nav-button {
-            svg path {
-                fill: $white;
+            #nav-button {
+                svg path {
+                    fill: $white;
+                };
             };
         };
     };

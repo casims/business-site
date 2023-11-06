@@ -8,6 +8,10 @@ h2, h3, h4, h5, h6, p, a, button {
   font-family: "Open Sans", sans-serif;
 }
 
+p {
+  color: #181818;
+}
+
 body {
   position: relative;
 }
@@ -44,11 +48,13 @@ header #nav-container .nav-bar-container .title-container svg {
   width: 2rem;
 }
 header #nav-container .nav-bar-container .title-container svg path {
+  fill: #181818;
   transition: fill 0.3s ease;
 }
 header #nav-container .nav-bar-container .title-container h1 {
   display: inline;
   margin: 0;
+  color: #181818;
   transition: color 0.3s ease;
 }
 header #nav-container .nav-bar-container #nav-button {
@@ -63,6 +69,7 @@ header #nav-container .nav-bar-container #nav-button svg {
   width: 2rem;
 }
 header #nav-container .nav-bar-container #nav-button svg path {
+  fill: #181818;
   transition: fill 0.3s ease;
 }
 header #nav-container .nav-bar-container #nav-button .close-menu-button {
@@ -77,16 +84,19 @@ header div#nav-container.menu-open {
   background-color: rgba(24, 24, 24, 0.85);
   position: relative;
 }
-header div#nav-container.menu-open h1, header div#nav-container.menu-open a {
+header div#nav-container.menu-open .nav-bar-container h1 {
   color: white;
 }
-header div#nav-container.menu-open svg path {
+header div#nav-container.menu-open .nav-bar-container svg path {
   fill: white;
 }
-header div#nav-container.menu-open #nav-button svg.open-menu-button {
+header div#nav-container.menu-open .nav-bar-container #nav-button svg path {
+  fill: white;
+}
+header div#nav-container.menu-open .nav-bar-container #nav-button svg.open-menu-button {
   display: none;
 }
-header div#nav-container.menu-open #nav-button svg.close-menu-button {
+header div#nav-container.menu-open .nav-bar-container #nav-button svg.close-menu-button {
   display: inline;
 }
 header div#nav-container.menu-open .nav-menu-container {
@@ -107,6 +117,7 @@ header div#nav-container.menu-open .nav-menu-container ul li {
   margin-bottom: 0.8rem;
 }
 header div#nav-container.menu-open .nav-menu-container ul li a {
+  color: white;
   text-decoration: none;
 }
 header div#nav-container.menu-open .nav-menu-container button {
@@ -120,13 +131,13 @@ header div#nav-container.menu-open .nav-menu-container button {
 header.stickied #nav-container {
   background-color: #181818;
 }
-header.stickied #nav-container .title-container svg path {
+header.stickied #nav-container .nav-bar-container .title-container svg path {
   fill: white;
 }
-header.stickied #nav-container .title-container h1 {
+header.stickied #nav-container .nav-bar-container .title-container h1 {
   color: white;
 }
-header.stickied #nav-container #nav-button svg path {
+header.stickied #nav-container .nav-bar-container #nav-button svg path {
   fill: white;
 }
 
