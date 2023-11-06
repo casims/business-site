@@ -11,18 +11,14 @@ h2, h3, h4, h5, h6, p, a, button {
 body {
   position: relative;
 }
-body main {
-  position: relative;
-  top: -5.5rem;
-}
 body main > section {
   padding: 1.5rem;
 }
 
 header {
-  position: sticky;
+  position: fixed;
   z-index: 99;
-  top: -1px;
+  top: 0;
   right: 0;
   left: 0;
 }
@@ -76,29 +72,29 @@ header #nav-container .nav-menu-container {
   display: none;
 }
 
-#nav-container.menu-open {
+header div#nav-container.menu-open {
   height: 100vh;
-  background-color: #181818;
+  background-color: rgba(24, 24, 24, 0.85);
   position: relative;
 }
-#nav-container.menu-open h1, #nav-container.menu-open a {
+header div#nav-container.menu-open h1, header div#nav-container.menu-open a {
   color: white;
 }
-#nav-container.menu-open svg path {
+header div#nav-container.menu-open svg path {
   fill: white;
 }
-#nav-container.menu-open #nav-button svg.open-menu-button {
+header div#nav-container.menu-open #nav-button svg.open-menu-button {
   display: none;
 }
-#nav-container.menu-open #nav-button svg.close-menu-button {
+header div#nav-container.menu-open #nav-button svg.close-menu-button {
   display: inline;
 }
-#nav-container.menu-open .nav-menu-container {
+header div#nav-container.menu-open .nav-menu-container {
   display: flex;
   flex-direction: column;
   height: calc(100% - 2.5rem);
 }
-#nav-container.menu-open .nav-menu-container ul {
+header div#nav-container.menu-open .nav-menu-container ul {
   flex: 1;
   display: flex;
   align-items: center;
@@ -106,14 +102,14 @@ header #nav-container .nav-menu-container {
   list-style: none;
   padding: 0;
 }
-#nav-container.menu-open .nav-menu-container ul li {
+header div#nav-container.menu-open .nav-menu-container ul li {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
 }
-#nav-container.menu-open .nav-menu-container ul li a {
+header div#nav-container.menu-open .nav-menu-container ul li a {
   text-decoration: none;
 }
-#nav-container.menu-open .nav-menu-container button {
+header div#nav-container.menu-open .nav-menu-container button {
   width: 5rem;
   height: 2rem;
   margin-bottom: 1rem;

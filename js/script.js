@@ -1,17 +1,20 @@
 'use strict';
 
 const navCont = {
-    observer: new IntersectionObserver(
-        ([e]) => e.target.classList.toggle("stickied", e.intersectionRatio < 1),
-        {threshold: [1]}
-    ),
     menuExpanded: false,
     navListeners: function() {
         document.getElementById('nav-button').addEventListener('click', function() {
             navCont.menuExpanded = !navCont.menuExpanded;
             navCont.toggleMenu();
         });
-        this.observer.observe(document.querySelector("header"));
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY === 0) {
+                header.classList.remove('stickied');
+            } else if (window.scrollY > 0 && !header.classList.contains('stickied')) {
+                header.classList.add('stickied');
+            };
+        })
     },
     toggleMenu: function() {
         const navTarget = document.getElementById('nav-container');
