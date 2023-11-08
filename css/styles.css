@@ -6,9 +6,6 @@ h1 {
 
 h2, h3, h4, h5, h6, p, a, button {
   font-family: "Open Sans", sans-serif;
-}
-
-p {
   color: #181818;
 }
 
@@ -16,7 +13,7 @@ body {
   position: relative;
 }
 body main > section {
-  padding: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 header {
@@ -145,7 +142,7 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 .hero-section.home {
   width: 100%;
   height: 100vh;
-  padding-bottom: 2.5rem;
+  padding: 1.5rem inherit 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -157,9 +154,13 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 .hero-section.home .text-container .hero-text {
   font-size: 2rem;
   margin: 0 0 1.5rem;
+  color: #181818;
 }
 .hero-section.home .text-container .hero-text span {
   color: #a37e74;
+}
+.hero-section.home .text-container p {
+  color: #181818;
 }
 .hero-section.home button {
   width: 2rem;
@@ -181,6 +182,52 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
   height: 4rem;
   border-radius: 3rem 3rem 0 0;
   background-color: #181818;
+}
+
+.home {
+  background-color: #181818;
+}
+.home h2, .home h3, .home h4, .home h5, .home h6, .home p {
+  color: white;
+}
+
+.main-section.home h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #dbbbaf;
+  margin: 0;
+  padding-top: 3.5rem;
+}
+.main-section.home .heading-subtext {
+  margin: 1rem 0;
+}
+.main-section.home .video-wrapper {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 0.75rem;
+  background-color: white;
+  margin: 3.5rem 0;
+}
+.main-section.home #home-expandable-list {
+  margin: 6rem 0;
+  padding: 0;
+  list-style: none;
+}
+.main-section.home #home-expandable-list .accord {
+  position: relative;
+  overflow: hidden;
+  height: 6.5rem;
+}
+.main-section.home #home-expandable-list .accord svg {
+  position: absolute;
+  left: 0;
+}
+.main-section.home #home-expandable-list .accord svg path {
+  fill: white;
+}
+.main-section.home #home-expandable-list h3, .main-section.home #home-expandable-list p {
+  padding-left: 2.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

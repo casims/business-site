@@ -3,7 +3,8 @@
 .hero-section.home {
     width: 100%;
     height: 100vh;
-    padding-bottom: 2.5rem;
+    padding: 1.5rem inherit 2.5rem;
+    // padding-bottom: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,9 +16,13 @@
         .hero-text {
             font-size: 2rem;
             margin: 0 0 1.5rem;
+            color: $black;
             span {
                 color: $colourdark;
             };
+        };
+        p {
+            color: $black;
         };
     };
     button {
@@ -41,4 +46,52 @@
         border-radius: 3rem 3rem 0 0;
         background-color: $black;
     }
+};
+
+.home {
+    background-color: $black;
+    h2, h3, h4, h5, h6, p {
+        color: $white;
+    };
+};
+
+.main-section.home {
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $colourlight;
+        margin: 0;
+        padding-top: 3.5rem;
+    };
+    .heading-subtext {
+        margin: 1rem 0;
+    };
+    .video-wrapper {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 0.75rem;
+        background-color: $white;
+        margin: 3.5rem 0;
+    };
+    #home-expandable-list {
+        margin: 6rem 0;
+        padding: 0;
+        list-style: none;
+        .accord {
+            position: relative;
+            overflow: hidden;
+            height: 6.5rem;
+            svg {
+                position: absolute;
+                left: 0;
+                path {
+                    fill: $white;
+                };
+            };
+        };
+        h3, p {
+            padding-left: 2.5rem;
+        };
+    };
 };
