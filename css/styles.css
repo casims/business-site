@@ -9,6 +9,10 @@ h2, h3, h4, h5, h6, p, a, button {
   color: #181818;
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 body {
   position: relative;
 }
@@ -79,7 +83,7 @@ header #nav-container .nav-menu-container {
 header div#nav-container.menu-open {
   height: 100vh;
   background-color: rgba(24, 24, 24, 0.85);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(10px);
   position: relative;
 }
 header div#nav-container.menu-open .nav-bar-container h1 {
@@ -142,7 +146,6 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 .hero-section.home {
   width: 100%;
   height: 100vh;
-  padding: 1.5rem inherit 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -155,6 +158,7 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
   font-size: 2rem;
   margin: 0 0 1.5rem;
   color: #181818;
+  line-height: 2.3rem;
 }
 .hero-section.home .text-container .hero-text span {
   color: #a37e74;
@@ -193,7 +197,7 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 
 .main-section.home h2 {
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: lighter;
   text-transform: uppercase;
   color: #dbbbaf;
   margin: 0;
@@ -217,14 +221,38 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 .main-section.home #home-expandable-list .accord {
   position: relative;
   overflow: hidden;
-  height: 6.5rem;
+  height: 5rem;
+  margin-bottom: 2rem;
+  transition: height 0.3s ease;
 }
 .main-section.home #home-expandable-list .accord svg {
   position: absolute;
   left: 0;
+  top: 0.45rem;
+  height: 1rem;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+  z-index: 0;
 }
 .main-section.home #home-expandable-list .accord svg path {
   fill: white;
+}
+.main-section.home #home-expandable-list .accord h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  z-index: 1;
+  position: relative;
+}
+.main-section.home #home-expandable-list .accord p {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.main-section.home #home-expandable-list .accord.expanded svg {
+  transform: rotate(180deg);
+}
+.main-section.home #home-expandable-list .accord.expanded p {
+  opacity: 1;
 }
 .main-section.home #home-expandable-list h3, .main-section.home #home-expandable-list p {
   padding-left: 2.5rem;

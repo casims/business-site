@@ -24,15 +24,17 @@ const navCont = {
             navTarget.classList.remove('menu-open');
         };
     },
-    accordHeightCollapsed: '6.5rem',
+    accordHeightCollapsed: '5rem',
     accordExpand: function(accord) {
         let accordHeight = accord.scrollHeight;
         accord.style.height = accordHeight + 'px';
         accord.setAttribute('expanded', 'true');
+        accord.classList.add('expanded');
     },
     accordCollapse: function(accord) {
         accord.style.height = this.accordHeightCollapsed;
         accord.setAttribute('expanded', 'false');
+        accord.classList.remove('expanded');
     },
     accordListeners: function() {
         // Functionality for accordians on individual project page, also expands first accordian on page load

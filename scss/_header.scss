@@ -63,7 +63,7 @@ header {
 header div#nav-container.menu-open {
     height: 100vh;
     background-color: $blacktrans;
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(10px);
     position: relative;
     .nav-bar-container {
         h1 {
