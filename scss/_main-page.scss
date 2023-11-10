@@ -65,6 +65,7 @@
     };
     .heading-subtext {
         margin: 1rem 0;
+        font-weight: lighter;
     };
     .video-wrapper {
         width: 100%;
@@ -115,8 +116,11 @@
                 opacity: 1;
             };
         };
-        h3, p {
+        h3 {
             padding-left: 2.5rem;
         };
+        p {
+            font-weight: lighter;
+        }
     };
 };
