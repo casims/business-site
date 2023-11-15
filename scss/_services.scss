@@ -1,0 +1,48 @@
+@use 'variables' as *;
+
+.hero-section.services {
+    background-color: $black;
+    .hero-card.services {
+        margin: 0 -0.75rem;
+        padding: 7rem 0.75rem 3.5rem;
+        background-image: url(/media/background-small.webp);
+        background-size: cover;
+        background-position: left;
+        border: 1px solid $blacklight;
+        border-top: none;
+        border-radius: 0 0 1.5rem 1.5rem;
+        h2 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 300;
+            text-transform: uppercase;
+        };
+        .heading-subtext {
+            font-size: 1.2rem;
+            span {
+                color: $colourdark;
+            };
+        };
+        .contact-button {
+            margin-top: 0.75rem;
+        };
+    };
+};
+
+.main-section.services {
+    background-color: $black;
+    p, h3 {
+        color: $white;
+    };
+    path {
+        fill: $white;
+    };
+    h3 {
+        padding-top: 3.5rem;
+        margin: 0;
+        font-size: 1.75rem;
+        color: $colourlight;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+};

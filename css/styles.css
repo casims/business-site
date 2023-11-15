@@ -15,9 +15,20 @@ p {
 
 body {
   position: relative;
+  background-color: #f0f0f0;
 }
 body main > section {
   padding: 0 1.5rem;
+}
+
+.contact-button {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #f0f0f0;
+  background-color: #181818;
+  border: none;
+  border-radius: 999px;
+  padding: 0.625rem 1.25rem;
 }
 
 header {
@@ -122,13 +133,6 @@ header div#nav-container.menu-open .nav-menu-container ul li a {
   color: #f0f0f0;
   text-decoration: none;
 }
-header div#nav-container.menu-open .nav-menu-container button {
-  width: 5rem;
-  height: 2rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 999px;
-}
 
 header.stickied #nav-container {
   background-color: #181818;
@@ -167,15 +171,6 @@ footer .social-media-container {
   height: 2.6rem;
   display: flex;
   align-items: center;
-}
-footer .social-media-container .contact-button {
-  font-size: 1rem;
-  text-transform: uppercase;
-  color: #f0f0f0;
-  background-color: #181818;
-  border: none;
-  border-radius: 999px;
-  padding: 0.625rem 1.25rem;
 }
 footer .social-media-container .divider {
   width: 1px;
@@ -412,6 +407,53 @@ footer .fine-print-container p:last-child {
   color: #f0f0f0;
   text-decoration: none;
   padding: 0.4rem 1rem;
+  text-transform: uppercase;
+}
+
+.hero-section.services {
+  background-color: #181818;
+}
+.hero-section.services .hero-card.services {
+  margin: 0 -0.75rem;
+  padding: 7rem 0.75rem 3.5rem;
+  background-image: url(/media/background-small.webp);
+  background-size: cover;
+  background-position: left;
+  border: 1px solid #565656;
+  border-top: none;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+.hero-section.services .hero-card.services h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.hero-section.services .hero-card.services .heading-subtext {
+  font-size: 1.2rem;
+}
+.hero-section.services .hero-card.services .heading-subtext span {
+  color: #a37e74;
+}
+.hero-section.services .hero-card.services .contact-button {
+  margin-top: 0.75rem;
+}
+
+.main-section.services {
+  background-color: #181818;
+}
+.main-section.services p, .main-section.services h3 {
+  color: #f0f0f0;
+}
+.main-section.services path {
+  fill: #f0f0f0;
+}
+.main-section.services h3 {
+  padding-top: 3.5rem;
+  margin: 0;
+  font-size: 1.75rem;
+  color: #dbbbaf;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
