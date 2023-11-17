@@ -2,15 +2,16 @@
 
 .hero-section.services {
     background-color: $black;
+    padding-top: 5.5rem;
     .hero-card.services {
         margin: 0 -0.75rem;
-        padding: 7rem 0.75rem 3.5rem;
+        padding: 3.5rem 0.75rem;
         background-image: url(/media/background-small.webp);
         background-size: cover;
         background-position: left;
         border: 1px solid $blacklight;
         border-top: none;
-        border-radius: 0 0 1.5rem 1.5rem;
+        border-radius: 1.5rem;
         h2 {
             margin: 0;
             color: $black;
@@ -25,8 +26,33 @@
 };
 
 .main-section.services {
-    path {
-        fill: $white;
+    .heading-subtext {
+        font-weight: 300;
+    };
+    ul {
+        margin-top: 3.5rem;
+        list-style: none;
+        padding: 0;
+        li {
+            margin-bottom: 2rem;
+        };
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+            path {
+                fill: $colourlight;
+            };
+        };
+        h4 {
+            color: $white;
+            font-size: 1.5rem;
+            text-transform: none;
+            margin: 0.5rem 0;
+        };
+        p {
+            margin: 0;
+            font-weight: 300;
+        };
     };
     h3 {
         padding-top: 3.5rem;

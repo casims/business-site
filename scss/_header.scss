@@ -111,6 +111,26 @@ header div#nav-container.menu-open {
     };
 };
 
+header.dark {
+    #nav-container {
+        .nav-bar-container {
+            .title-container {
+                svg path {
+                    fill: $white;
+                };
+                h1 {
+                    color: $white;
+                }
+            };
+            #nav-button {
+                svg path {
+                    fill: $white;
+                };
+            };
+        };
+    };
+};
+
 header.stickied {
     #nav-container {
         background-color: $black;
