@@ -5,11 +5,42 @@ h1 {
     text-transform: uppercase;
 };
 
-h2, h3, h4, h5, h6, p, a, button {
+h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: $colourdark;
+    text-transform: uppercase;
+};
+
+h2 {
+    font-size: 2rem;
+};
+
+h3 {
+    font-size: 1.75rem;
+};
+
+p, a, button {
     font-family: 'Open Sans', sans-serif;
     color: $black;
 };
 
 p {
     line-height: 1.5rem;
-}
+};
+
+section.dark {
+    h2, h3, h4, h5, h6 {
+        color: $colourlight;
+    };
+    p, a {
+        color: $white;
+    };
+};
+
+span {
+    color: $colourdark;
+    &.dark{
+        color: $colourlight;
+    };
+};

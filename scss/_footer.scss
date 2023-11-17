@@ -85,3 +85,26 @@ footer {
         }
     };
 };
+
+footer.dark {
+    background-color: $black;
+    p, a {
+        color: $white;
+    };
+    svg {
+        path {
+            fill: $white;
+        };
+    };
+    .heading-subtext {
+        span {
+            color: $colourlight;
+        };
+    };
+    .divider {
+        background-color: $white;
+    };
+    .site-map > li ul p {
+        color: $whiteborder;
+    };
+};

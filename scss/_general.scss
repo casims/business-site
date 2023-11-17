@@ -2,7 +2,6 @@
 
 body {
     position: relative;
-    background-color: $white;
     main {
         & > section {
             padding: 0 1.5rem;
@@ -10,12 +9,33 @@ body {
     };
 };
 
-.contact-button {
+section {
+    background-color: $white;
+    &.dark {
+        background-color: $black;
+    };
+};
+
+@mixin button-styles {
     font-size: 1rem;
     text-transform: uppercase;
     color: $white;
     background-color: $black;
     border: none;
     border-radius: 999px;
+    text-decoration: none;
+};
+
+.contact-button {
+    @include button-styles;
     padding: 0.625rem 1.25rem;
+    &.dark {
+        color: $black;
+        background-color:$white;
+    };
+};
+
+a.button {
+    @include button-styles; 
+    padding: 0.525rem 1.25rem;
 };
