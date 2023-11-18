@@ -516,4 +516,37 @@ footer.dark .site-map > li ul p {
   margin: 0;
 }
 
+#faqs-expandable-list {
+  padding-bottom: 2.5rem;
+  margin-bottom: 0;
+}
+#faqs-expandable-list .accord {
+  overflow: hidden;
+  height: 5rem;
+  position: relative;
+  border-bottom: 2px #c8c8c8 solid;
+}
+#faqs-expandable-list .accord .accord-button {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding-right: 3rem;
+  margin-bottom: 1rem;
+  color: #c8c8c8;
+}
+#faqs-expandable-list .accord svg {
+  position: absolute;
+  right: 0;
+  top: 1rem;
+  height: 2rem;
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+#faqs-expandable-list .accord svg path {
+  fill: #c8c8c8;
+}
+#faqs-expandable-list .accord p:last-child {
+  color: #c8c8c8;
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
