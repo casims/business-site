@@ -30,7 +30,7 @@
         font-weight: 300;
     };
     ul {
-        margin-top: 3.5rem;
+        margin-top: 2rem;
         list-style: none;
         padding: 0;
         li {
@@ -68,12 +68,14 @@
         height: 5rem;
         position: relative;
         border-bottom: 2px $whiteborder solid;
+        transition: all 0.3s ease;
         .accord-button {
             font-size: 1.5rem;
             line-height: 2rem;
             padding-right: 3rem;
             margin-bottom: 1rem;
             color: $whiteborder;
+            transition: color 0.3s ease;
         };
         svg {
             position: absolute;
@@ -84,11 +86,28 @@
             z-index: 0;
             path {
                 fill: $whiteborder;
+                transition: fill 0.3s ease;
             };
         };
         p:last-child {
             color: $whiteborder;
             margin-bottom: 1rem;
-        }
+            transition: color 0.3s ease;
+        };
+        &.expanded {
+            border-color: $white;
+            .accord-button {
+                color: $white;
+            };
+            svg {
+                transform: rotate(180deg);
+                path {
+                    fill: $white;
+                };
+            };
+            p:last-child {
+                color: $white;
+            };
+        };
     };
 };
