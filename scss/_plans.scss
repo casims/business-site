@@ -1,0 +1,39 @@
+@use 'variables' as *;
+
+.title-section.plans {
+    padding-top: 9rem;
+    padding-bottom: 3.5rem;
+    h2 {
+        margin: 0;
+    };
+    #plans-button-container {
+        padding: .75rem;
+        background-color: $blacklight;
+        border-radius: 9999px;
+        border: 2px $colourdark solid;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        button {
+            background-color: transparent;
+            color: $white;
+            border: none;
+            text-transform: uppercase;
+            padding: 0 .75rem;
+        };
+    };
+};
+
+#plan-container>section {
+    padding: 0 1.5rem;
+};
+
+.hero-section.plans {
+    .heading-subtext {
+        font-weight: 300;
+        margin: 0;
+    };
+    .contact-button {
+        margin-top: 2rem;
+    }
+};
