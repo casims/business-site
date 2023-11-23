@@ -459,8 +459,7 @@ footer.dark .site-map > li ul p {
 }
 
 .title-section.plans {
-  padding-top: 9rem;
-  padding-bottom: 3.5rem;
+  padding-top: 8.5rem;
 }
 .title-section.plans h2 {
   margin: 0;
@@ -479,19 +478,83 @@ footer.dark .site-map > li ul p {
   color: #f0f0f0;
   border: none;
   text-transform: uppercase;
-  padding: 0 0.75rem;
+  padding: 0 2rem;
 }
 
 #plan-container > section {
-  padding: 0 1.5rem;
+  padding: 3.5rem 1.5rem 2rem;
 }
 
 .hero-section.plans .heading-subtext {
+  font-size: 1.2rem;
   font-weight: 300;
   margin: 0;
 }
+.hero-section.plans p {
+  font-weight: 300;
+}
 .hero-section.plans .contact-button {
   margin-top: 2rem;
+}
+
+.main-section.plans h3 {
+  margin: 0;
+}
+.main-section.plans .heading-subtext {
+  font-weight: 300;
+}
+.main-section.plans p {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+.features-section.plans #plans-expandable-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.features-section.plans #plans-expandable-list .accord {
+  position: relative;
+  overflow: hidden;
+  height: 5rem;
+  margin-bottom: 2rem;
+  transition: height 0.3s ease;
+}
+.features-section.plans #plans-expandable-list .accord svg {
+  position: absolute;
+  left: 0;
+  top: 0.45rem;
+  height: 1rem;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+  z-index: 0;
+}
+.features-section.plans #plans-expandable-list .accord svg path {
+  fill: #f0f0f0;
+}
+.features-section.plans #plans-expandable-list .accord h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+  text-transform: none;
+  z-index: 1;
+  position: relative;
+}
+.features-section.plans #plans-expandable-list .accord p {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+.features-section.plans #plans-expandable-list .accord.expanded svg {
+  transform: rotate(180deg);
+}
+.features-section.plans #plans-expandable-list .accord.expanded p {
+  opacity: 1;
+}
+.features-section.plans #plans-expandable-list h3 {
+  padding-left: 2.5rem;
+}
+.features-section.plans #plans-expandable-list p {
+  font-weight: 300;
 }
 
 .hero-section.services {

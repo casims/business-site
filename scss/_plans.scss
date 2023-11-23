@@ -1,8 +1,7 @@
 @use 'variables' as *;
 
 .title-section.plans {
-    padding-top: 9rem;
-    padding-bottom: 3.5rem;
+    padding-top: 8.5rem;
     h2 {
         margin: 0;
     };
@@ -19,21 +18,91 @@
             color: $white;
             border: none;
             text-transform: uppercase;
-            padding: 0 .75rem;
+            padding: 0 2rem;
         };
     };
 };
 
 #plan-container>section {
-    padding: 0 1.5rem;
+    padding: 3.5rem 1.5rem 2rem;
 };
 
 .hero-section.plans {
     .heading-subtext {
+        font-size: 1.2rem;
         font-weight: 300;
         margin: 0;
     };
+    p {
+        font-weight: 300;
+    };
     .contact-button {
         margin-top: 2rem;
+    };
+};
+
+.main-section.plans {
+    h3 {
+        margin: 0;
+    };
+    .heading-subtext {
+        font-weight: 300;
+    };
+    p {
+        margin-bottom: 0;
+        font-weight: 300;
     }
+};
+
+.features-section.plans {
+    #plans-expandable-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .accord {
+            position: relative;
+            overflow: hidden;
+            height: 5rem;
+            margin-bottom: 2rem;
+            transition: height 0.3s ease;
+            svg {
+                position: absolute;
+                left: 0;
+                top: .45rem;
+                height: 1rem;
+                transform: rotate(90deg);
+                transition: transform 0.3s ease;
+                z-index: 0;
+                path {
+                    fill: $white;
+                };
+            };
+            h3 {
+                margin-top: 0;
+                font-size: 1.5rem;
+                color: $white;
+                text-transform: none;
+                z-index: 1;
+                position: relative;
+            };
+            p {
+                transition: opacity 0.3s;
+                opacity: 0;
+            };
+        };
+        .accord.expanded {
+            svg {
+                transform: rotate(180deg);
+            };
+            p {
+                opacity: 1;
+            };
+        };
+        h3 {
+            padding-left: 2.5rem;
+        };
+        p {
+            font-weight: 300;
+        };
+    };
 };
