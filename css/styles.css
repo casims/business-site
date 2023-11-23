@@ -50,7 +50,7 @@ body {
   position: relative;
 }
 body main > section {
-  padding: 0 1.5rem;
+  padding: 3.5rem 1.5rem 2rem;
 }
 
 section {
@@ -213,7 +213,7 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 }
 
 footer {
-  padding: 3.5rem 1.5rem;
+  padding: 5rem 1.5rem 3.5rem;
   background-color: #f0f0f0;
 }
 footer svg {
@@ -360,7 +360,6 @@ footer.dark .site-map > li ul p {
 }
 .main-section.home h2 {
   margin: 0;
-  padding-top: 3.5rem;
 }
 .main-section.home .heading-subtext {
   margin: 1rem 0;
@@ -371,11 +370,11 @@ footer.dark .site-map > li ul p {
   aspect-ratio: 1/1;
   border-radius: 0.75rem;
   background-color: #f0f0f0;
-  margin: 3.5rem 0;
+  margin: 3.5rem 0 0;
 }
 .main-section.home #home-expandable-list {
-  margin: 6rem 0;
-  padding: 0;
+  padding: 6rem 0 0;
+  margin: 0;
   list-style: none;
 }
 .main-section.home #home-expandable-list .accord {
@@ -611,12 +610,10 @@ footer.dark .site-map > li ul p {
   font-weight: 300;
 }
 .main-section.services h3 {
-  padding-top: 3.5rem;
   margin: 0;
 }
 
 #faqs-expandable-list {
-  padding-bottom: 2.5rem;
   margin-bottom: 0;
 }
 #faqs-expandable-list .accord {
@@ -669,6 +666,7 @@ footer.dark .site-map > li ul p {
 
 .hero-section.about {
   background-color: #181818;
+  padding-top: 0;
 }
 .hero-section.about .hero-card.about {
   display: flex;
@@ -693,7 +691,6 @@ footer.dark .site-map > li ul p {
 }
 
 .main-section.about h3 {
-  padding-top: 3.5rem;
   margin: 0;
 }
 .main-section.about .heading-subtext {
@@ -702,6 +699,9 @@ footer.dark .site-map > li ul p {
 .main-section.about ul {
   list-style: none;
   padding: 0;
+}
+.main-section.about .values-section {
+  padding-top: 3.5rem;
 }
 .main-section.about .stats-section {
   background-color: #181818;
@@ -734,6 +734,9 @@ footer.dark .site-map > li ul p {
 }
 .main-section.about .values-section p {
   margin: 0;
+}
+.main-section.about .team {
+  padding-top: 3.5rem;
 }
 .main-section.about .team ul li .team-name {
   font-size: 1.25rem;

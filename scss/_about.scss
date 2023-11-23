@@ -2,6 +2,7 @@
 
 .hero-section.about {
     background-color: $black;
+    padding-top: 0;
     .hero-card.about {
         display: flex;
         flex-direction: column;
@@ -27,7 +28,6 @@
 
 .main-section.about {
     h3 {
-        padding-top: 3.5rem;
         margin: 0;
     };
     .heading-subtext {
@@ -37,6 +37,9 @@
         list-style: none;
         padding: 0;
     };
+    .values-section {
+        padding-top: 3.5rem;
+    }
     .stats-section {
         background-color: $black;
         ul {
@@ -70,6 +73,7 @@
         };
     };
     .team {
+        padding-top: 3.5rem;
         ul {
             li {
                 .team-name {
