@@ -7,7 +7,7 @@
     };
     #plans-button-container {
         padding: .75rem;
-        background-color: $blacklight;
+        background-color: $whitedark;
         border-radius: 9999px;
         border: 2px $colourdark solid;
         margin-top: 1.5rem;
@@ -21,6 +21,11 @@
             padding: 0 2rem;
         };
     };
+    &.dark {
+        #plans-button-container {
+            background-color: $blacklight;
+        }
+    }
 };
 
 #plan-container>section {
@@ -104,5 +109,46 @@
         p {
             font-weight: 300;
         };
+    };
+};
+
+// PRO PLAN STYLES
+
+.hero-section.pro.plans {
+    .heading-subtext, p {
+        font-weight: 400;
+    };
+};
+
+.main-section.pro.plans {
+    .heading-subtext, p {
+        font-weight: 400;
+    };
+};
+
+.features-section.pro.plans {
+    #plans-expandable-list {
+        svg path {
+            fill: $black;
+        };
+        h3, p {
+            color: $black;
+            font-weight: 400;
+        };
+    };
+    .features-list.plans {
+            padding: 0;
+            list-style: none;
+            h4 {
+                font-size: 1.5rem;
+                color: $black;
+                margin: 2rem 0 0.5rem;
+                text-transform: none;
+                font-weight: 400;
+            };
+            p {
+                margin: 0;
+                font-weight: 400;
+            };
     };
 };

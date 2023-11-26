@@ -465,7 +465,7 @@ footer.dark .site-map > li ul p {
 }
 .title-section.plans #plans-button-container {
   padding: 0.75rem;
-  background-color: #565656;
+  background-color: #e1e1e1;
   border-radius: 9999px;
   border: 2px #a37e74 solid;
   margin-top: 1.5rem;
@@ -478,6 +478,9 @@ footer.dark .site-map > li ul p {
   border: none;
   text-transform: uppercase;
   padding: 0 2rem;
+}
+.title-section.plans.dark #plans-button-container {
+  background-color: #565656;
 }
 
 #plan-container > section {
@@ -554,6 +557,37 @@ footer.dark .site-map > li ul p {
 }
 .features-section.plans #plans-expandable-list p {
   font-weight: 300;
+}
+
+.hero-section.pro.plans .heading-subtext, .hero-section.pro.plans p {
+  font-weight: 400;
+}
+
+.main-section.pro.plans .heading-subtext, .main-section.pro.plans p {
+  font-weight: 400;
+}
+
+.features-section.pro.plans #plans-expandable-list svg path {
+  fill: #181818;
+}
+.features-section.pro.plans #plans-expandable-list h3, .features-section.pro.plans #plans-expandable-list p {
+  color: #181818;
+  font-weight: 400;
+}
+.features-section.pro.plans .features-list.plans {
+  padding: 0;
+  list-style: none;
+}
+.features-section.pro.plans .features-list.plans h4 {
+  font-size: 1.5rem;
+  color: #181818;
+  margin: 2rem 0 0.5rem;
+  text-transform: none;
+  font-weight: 400;
+}
+.features-section.pro.plans .features-list.plans p {
+  margin: 0;
+  font-weight: 400;
 }
 
 .hero-section.services {
@@ -722,6 +756,7 @@ footer.dark .site-map > li ul p {
 }
 .main-section.about .stats-section ul li p:last-child {
   margin: 2rem 0 2rem;
+  font-weight: 300;
 }
 .main-section.about .values-section {
   background-color: #181818;
@@ -734,6 +769,7 @@ footer.dark .site-map > li ul p {
 }
 .main-section.about .values-section p {
   margin: 0;
+  font-weight: 300;
 }
 .main-section.about .team {
   padding-top: 3.5rem;
