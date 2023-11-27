@@ -78,11 +78,18 @@
         padding-top: 3.5rem;
         ul {
             li {
+                padding-top: 2.25rem;
+                .portrait-wrapper {
+                    margin-bottom: 1rem;
+                    border-radius: 0.5rem;
+                    overflow: hidden;
+                };
                 .team-name {
                     font-size: 1.25rem;
                     font-weight: 300;
                     margin: 0;
                     color: $white;
+
                 };
                 .team-title {
                     color: $whiteborder;

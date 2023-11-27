@@ -124,6 +124,19 @@
     .heading-subtext, p {
         font-weight: 400;
     };
+    .video-wrapper {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: 0.75rem;
+        background-color: $white;
+        margin: 1.5rem 0 0;
+        overflow: hidden;
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        };
+    };
 };
 
 .features-section.pro.plans {

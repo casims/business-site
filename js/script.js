@@ -115,8 +115,12 @@ const navCont = {
             <h3>Pro Plan</h3>
             <p class="heading-subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam blanditiis nisi veritatis odio explicabo.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, architecto saepe in inventore aliquam impedit ad praesentium, non optio vero unde voluptatum nostrum, culpa quae. Repellendus, debitis soluta. Voluptatibus, sapiente.</p>
+            <div class="video-wrapper">
+                <video autoplay loop muted preload>
+                    <source src="media/videos/city_pan.mp4" type="video/mp4">
+                </video> 
+            </div>
         </section>
-        <!-- VIDEO/IMG HERE -->
         <section class="features-section pro plans">
             <ul id="plans-expandable-list">
                 <li class="accord">

@@ -55,6 +55,12 @@
         border-radius: 0.75rem;
         background-color: $white;
         margin: 3.5rem 0 0;
+        overflow: hidden;
+        video {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        };
     };
     #home-expandable-list {
         padding: 6rem 0 0;
