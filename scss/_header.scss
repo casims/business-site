@@ -28,11 +28,14 @@ header {
                         transition: fill 0.3s ease;
                     };
                 };
-                h1 {
-                    display: inline;
-                    margin: 0;
-                    color: $black;
-                    transition: color 0.3s ease;
+                a {
+                    text-decoration: none;
+                    h1 {
+                        display: inline;
+                        margin: 0;
+                        color: $black;
+                        transition: color 0.3s ease;
+                    };
                 };
             };
             #nav-button {
@@ -63,11 +66,16 @@ header {
 header div#nav-container.menu-open {
     height: 100vh;
     background-color: $blacktrans;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(6px);
     position: relative;
     .nav-bar-container {
-        h1 {
-            color: $white;
+        .title-container {
+            a {
+                text-decoration: none;
+                h1 {
+                    color: $white;
+                };
+            };
         };
         svg {
             path {
@@ -96,15 +104,44 @@ header div#nav-container.menu-open {
             flex: 1;
             display: flex;
             align-items: center;
-            margin: 0 0 9rem;
+            margin: 0 0 3.5rem;
             list-style: none;
             padding: 0;
             li {
                 font-size: 2.2rem;
                 margin-bottom: .8rem;
+                transition: transform 0.3s ease;
                 a {
                     color: $white;
                     text-decoration: none;
+                    padding-right: 1rem;
+                    transition: padding-right 0.3s ease;
+                    &:hover {
+                        padding-right: 2rem;
+                    }
+                };
+                svg {
+                    transform: rotate(90deg);
+                    width: 1rem;
+                    path {
+                        fill: $white;
+                    };
+                };
+                &:hover {
+                    transform: translateX(0.5rem);
+                }
+            };
+        };
+        .social-media-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .social-icons {
+                svg {
+                    margin-left: 1rem;
+                    path {
+                        fill: $white;
+                    };
                 };
             };
         };

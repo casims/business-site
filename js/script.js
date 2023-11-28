@@ -55,6 +55,14 @@ const navCont = {
                 };
             });
         };
+        // Collapses all open acoordians on window resize, prevents cut off text when section 
+        window.addEventListener('resize', function() {
+            for (let accordSection of accordSections) {
+                if (accordSection.getAttribute('expanded') === 'true') {
+                    navCont.accordExpand(accordSection);
+                };
+            };
+        });
     },
     pageChecker: function() {
         const hostName = 'http://127.0.0.1:5500/';

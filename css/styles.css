@@ -68,11 +68,15 @@ section.dark {
   border: none;
   border-radius: 999px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
   padding: 0.625rem 1.25rem;
 }
 .contact-button.dark {
   color: #181818;
   background-color: #f0f0f0;
+}
+.contact-button:hover {
+  cursor: pointer;
 }
 
 a.button {
@@ -83,7 +87,13 @@ a.button {
   border: none;
   border-radius: 999px;
   text-decoration: none;
+  transition: background-color 0.3s ease;
   padding: 0.525rem 1.25rem;
+}
+
+.contact-button:hover, a.button:hover {
+  color: #f0f0f0;
+  background-color: #a37e74;
 }
 
 header {
@@ -118,7 +128,10 @@ header #nav-container .nav-bar-container .title-container svg path {
   fill: #181818;
   transition: fill 0.3s ease;
 }
-header #nav-container .nav-bar-container .title-container h1 {
+header #nav-container .nav-bar-container .title-container a {
+  text-decoration: none;
+}
+header #nav-container .nav-bar-container .title-container a h1 {
   display: inline;
   margin: 0;
   color: #181818;
@@ -149,10 +162,13 @@ header #nav-container .nav-menu-container {
 header div#nav-container.menu-open {
   height: 100vh;
   background-color: rgba(24, 24, 24, 0.85);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(6px);
   position: relative;
 }
-header div#nav-container.menu-open .nav-bar-container h1 {
+header div#nav-container.menu-open .nav-bar-container .title-container a {
+  text-decoration: none;
+}
+header div#nav-container.menu-open .nav-bar-container .title-container a h1 {
   color: #f0f0f0;
 }
 header div#nav-container.menu-open .nav-bar-container svg path {
@@ -176,17 +192,44 @@ header div#nav-container.menu-open .nav-menu-container ul {
   flex: 1;
   display: flex;
   align-items: center;
-  margin: 0 0 9rem;
+  margin: 0 0 3.5rem;
   list-style: none;
   padding: 0;
 }
 header div#nav-container.menu-open .nav-menu-container ul li {
   font-size: 2.2rem;
   margin-bottom: 0.8rem;
+  transition: transform 0.3s ease;
 }
 header div#nav-container.menu-open .nav-menu-container ul li a {
   color: #f0f0f0;
   text-decoration: none;
+  padding-right: 1rem;
+  transition: padding-right 0.3s ease;
+}
+header div#nav-container.menu-open .nav-menu-container ul li a:hover {
+  padding-right: 2rem;
+}
+header div#nav-container.menu-open .nav-menu-container ul li svg {
+  transform: rotate(90deg);
+  width: 1rem;
+}
+header div#nav-container.menu-open .nav-menu-container ul li svg path {
+  fill: #f0f0f0;
+}
+header div#nav-container.menu-open .nav-menu-container ul li:hover {
+  transform: translateX(0.5rem);
+}
+header div#nav-container.menu-open .nav-menu-container .social-media-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header div#nav-container.menu-open .nav-menu-container .social-media-container .social-icons svg {
+  margin-left: 1rem;
+}
+header div#nav-container.menu-open .nav-menu-container .social-media-container .social-icons svg path {
+  fill: #f0f0f0;
 }
 
 header.dark #nav-container .nav-bar-container .title-container svg path {
@@ -409,6 +452,7 @@ footer.dark .site-map > li ul p {
   text-transform: none;
   z-index: 1;
   position: relative;
+  cursor: pointer;
 }
 .main-section.home #home-expandable-list .accord p {
   transition: opacity 0.3s;
@@ -432,6 +476,10 @@ footer.dark .site-map > li ul p {
   padding-bottom: 3.5rem;
 }
 .info-section.home .global-container {
+  background-image: url(../media/globe.png);
+  background-size: 30rem;
+  background-repeat: no-repeat;
+  background-position-x: -60%;
   background-color: #e1e1e1;
   padding: 1rem 1rem 3rem;
   border: 1px solid #c8c8c8;

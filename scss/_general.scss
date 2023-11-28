@@ -24,6 +24,7 @@ section {
     border: none;
     border-radius: 999px;
     text-decoration: none;
+    transition: background-color 0.3s ease;
 };
 
 .contact-button {
@@ -33,9 +34,17 @@ section {
         color: $black;
         background-color:$white;
     };
+    &:hover {
+        cursor: pointer;
+    };
 };
 
 a.button {
     @include button-styles; 
     padding: 0.525rem 1.25rem;
+};
+
+.contact-button:hover, a.button:hover {
+    color: $white;
+    background-color: $colourdark;
 };

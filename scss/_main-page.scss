@@ -91,6 +91,7 @@
                 text-transform: none;
                 z-index: 1;
                 position: relative;
+                cursor: pointer;
             };
             p {
                 transition: opacity 0.3s;
@@ -118,6 +119,10 @@
     padding-top: 3.5rem;
     padding-bottom: 3.5rem;
     .global-container {
+        background-image: url(../media/globe.png);
+        background-size: 30rem;
+        background-repeat: no-repeat;
+        background-position-x: -60%; 
         background-color: $whitedark;
         padding: 1rem 1rem 3rem;
         border: 1px solid $whiteborder;
