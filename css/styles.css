@@ -518,7 +518,7 @@ footer.dark .site-map > li ul p {
   margin: 0;
 }
 .title-section.plans #plans-button-container {
-  padding: 0.75rem;
+  padding: 0.3rem 0.4rem;
   background-color: #e1e1e1;
   border-radius: 9999px;
   border: 2px #a37e74 solid;
@@ -531,7 +531,14 @@ footer.dark .site-map > li ul p {
   color: #f0f0f0;
   border: none;
   text-transform: uppercase;
-  padding: 0 2rem;
+  padding: 0.65rem 1rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.title-section.plans #plans-button-container button:hover, .title-section.plans #plans-button-container button.active {
+  background-color: #a37e74;
+  color: #f0f0f0;
 }
 .title-section.plans.dark #plans-button-container {
   background-color: #565656;

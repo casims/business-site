@@ -6,7 +6,7 @@
         margin: 0;
     };
     #plans-button-container {
-        padding: .75rem;
+        padding: 0.3rem 0.4rem;
         background-color: $whitedark;
         border-radius: 9999px;
         border: 2px $colourdark solid;
@@ -18,7 +18,14 @@
             color: $white;
             border: none;
             text-transform: uppercase;
-            padding: 0 2rem;
+            padding: 0.65rem 1rem;
+            border-radius: 9999px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover, &.active {
+                background-color: $colourdark;
+                color: $white;
+            };
         };
     };
     &.dark {

@@ -175,19 +175,33 @@ const navCont = {
         const titleSection = document.querySelector('section.title-section');
         const header = document.querySelector('header');
         const footer = document.querySelector('footer');
+        const stanButton = document.querySelector('button#standard-button');
+        const proButton = document.querySelector('button#pro-button');
         if (type === 'standard') {
             planHTMLTarget.innerHTML = this.standardPlanPage;
             header.classList.add('dark');
             titleSection.classList.add('dark');
+            stanButton.classList.add('active');
+            proButton.classList.remove('active');
             footer.classList.add('dark');
             this.accordListeners();
         } else if (type === 'pro') {
             planHTMLTarget.innerHTML = this.proPlanPage;
             header.classList.remove('dark');
             titleSection.classList.remove('dark');
+            stanButton.classList.remove('active');
+            proButton.classList.add('active');
             footer.classList.remove('dark');
             this.accordListeners();
         };
+        stanButton.addEventListener("click", function() {
+            window.location.hash = '#standard';
+            scroll(0,0);
+        });
+        proButton.addEventListener("click", function() {
+            window.location.hash = '#pro';
+            scroll(0,0);
+        });
     },
 };
 
