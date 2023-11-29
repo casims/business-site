@@ -845,9 +845,16 @@ footer.dark .site-map > li ul p {
   padding-top: 2.25rem;
 }
 .main-section.about .team ul li .portrait-wrapper {
+  width: 100%;
+  aspect-ratio: 42/53;
   margin-bottom: 1rem;
   border-radius: 0.5rem;
   overflow: hidden;
+}
+.main-section.about .team ul li .portrait-wrapper img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .main-section.about .team ul li .team-name {
   font-size: 1.25rem;
