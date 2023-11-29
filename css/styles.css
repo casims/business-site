@@ -595,6 +595,7 @@ footer.dark .site-map > li ul p {
   text-transform: none;
   z-index: 1;
   position: relative;
+  cursor: pointer;
 }
 .features-section.plans #plans-expandable-list .accord p {
   transition: opacity 0.3s;
@@ -731,6 +732,9 @@ footer.dark .site-map > li ul p {
   margin-bottom: 1rem;
   color: #c8c8c8;
   transition: color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
 }
 #faqs-expandable-list .accord svg {
   position: absolute;

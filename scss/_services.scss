@@ -74,6 +74,9 @@
             margin-bottom: 1rem;
             color: $whiteborder;
             transition: color 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
         };
         svg {
             position: absolute;
