@@ -7,14 +7,17 @@ const navCont = {
             navCont.menuExpanded = !navCont.menuExpanded;
             navCont.toggleMenu();
         });
-        const header = document.querySelector('header');
         window.addEventListener('scroll', function() {
-            if (window.scrollY === 0) {
-                header.classList.remove('stickied');
-            } else if (window.scrollY > 0 && !header.classList.contains('stickied')) {
-                header.classList.add('stickied');
-            };
-        })
+            navCont.navClassToggle();
+        });
+    },
+    navClassToggle: function() {
+        const header = document.querySelector('header');
+        if (window.scrollY === 0) {
+            header.classList.remove('stickied');
+        } else if (window.scrollY > 0 && !header.classList.contains('stickied')) {
+            header.classList.add('stickied');
+        };
     },
     toggleMenu: function() {
         const navTarget = document.getElementById('nav-container');
@@ -70,7 +73,7 @@ const navCont = {
         let planType = null;
         if (capturedURL === hostName) {
             this.accordListeners();
-        } else if (capturedURL === hostName + 'services.html') {
+        } else if (capturedURL.includes(hostName + 'services.html')) {
             this.accordListeners();
         } else if (capturedURL === hostName + 'plans.html' || capturedURL === hostName + 'plans.html#standard') {
             planType = 'standard';
@@ -190,6 +193,7 @@ const navCont = {
 
 window.onload = function() {
     navCont.navListeners();
+    navCont.navClassToggle();
     navCont.pageChecker();
 };
 
