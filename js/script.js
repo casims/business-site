@@ -95,7 +95,6 @@ const navCont = {
             <p class="heading-subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam blanditiis nisi veritatis odio explicabo.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, architecto saepe in inventore aliquam impedit ad praesentium, non optio vero unde voluptatum nostrum, culpa quae. Repellendus, debitis soluta. Voluptatibus, sapiente.</p>
         </section>
-        <!-- VIDEO/IMG HERE -->
         <section class="features-section plans dark">
             <ul id="plans-expandable-list">
                 <li class="accord">
@@ -174,25 +173,36 @@ const navCont = {
         const planHTMLTarget = document.querySelector('div#plan-container');
         const titleSection = document.querySelector('section.title-section');
         const header = document.querySelector('header');
+        const main = document.querySelector('main');
         const footer = document.querySelector('footer');
         const stanButton = document.querySelector('button#standard-button');
         const proButton = document.querySelector('button#pro-button');
         if (type === 'standard') {
-            planHTMLTarget.innerHTML = this.standardPlanPage;
+            planHTMLTarget.className = 'hidden';
+            setTimeout(() => {
+                planHTMLTarget.innerHTML = this.standardPlanPage;
+                this.accordListeners();
+                planHTMLTarget.className = 'visible';
+            }, 300);
             header.classList.add('dark');
             titleSection.classList.add('dark');
             stanButton.classList.add('active');
             proButton.classList.remove('active');
+            main.classList.add('dark');
             footer.classList.add('dark');
-            this.accordListeners();
         } else if (type === 'pro') {
-            planHTMLTarget.innerHTML = this.proPlanPage;
+            planHTMLTarget.className = 'hidden';
+            setTimeout(() => {
+                planHTMLTarget.innerHTML = this.proPlanPage;
+                this.accordListeners();
+                planHTMLTarget.className = 'visible';
+            }, 300);
             header.classList.remove('dark');
             titleSection.classList.remove('dark');
             stanButton.classList.remove('active');
             proButton.classList.add('active');
+            main.classList.remove('dark');
             footer.classList.remove('dark');
-            this.accordListeners();
         };
         stanButton.addEventListener("click", function() {
             window.location.hash = '#standard';

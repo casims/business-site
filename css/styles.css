@@ -49,6 +49,13 @@ span.dark {
 body {
   position: relative;
 }
+body main {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+body main.dark {
+  background-color: #181818;
+}
 body main > section {
   padding: 3.5rem 1.5rem 2rem;
 }
@@ -258,6 +265,7 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 footer {
   padding: 5rem 1.5rem 3.5rem;
   background-color: #f0f0f0;
+  transition: all 0.3s ease;
 }
 footer svg {
   display: block;
@@ -513,9 +521,11 @@ footer.dark .site-map > li ul p {
 
 .title-section.plans {
   padding-top: 8.5rem;
+  transition: background-color 0.3s ease;
 }
 .title-section.plans h2 {
   margin: 0;
+  transition: color 0.3s ease;
 }
 .title-section.plans #plans-button-container {
   padding: 0.3rem 0.4rem;
@@ -525,10 +535,11 @@ footer.dark .site-map > li ul p {
   margin-top: 1.5rem;
   display: flex;
   justify-content: space-between;
+  transition: background-color, color 0.3s ease;
 }
 .title-section.plans #plans-button-container button {
   background-color: transparent;
-  color: #f0f0f0;
+  color: #181818;
   border: none;
   text-transform: uppercase;
   padding: 0.65rem 1rem;
@@ -543,9 +554,25 @@ footer.dark .site-map > li ul p {
 .title-section.plans.dark #plans-button-container {
   background-color: #565656;
 }
+.title-section.plans.dark #plans-button-container button {
+  color: #f0f0f0;
+}
 
 #plan-container > section {
   padding: 3.5rem 1.5rem 2rem;
+}
+#plan-container.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.15s ease;
+}
+#plan-container.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.15s, opacity 0.15s ease;
+}
+#plan-container.hidden > section {
+  background-color: transparent !important;
 }
 
 .hero-section.plans .heading-subtext {
