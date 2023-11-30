@@ -361,6 +361,10 @@ footer.dark svg path {
 footer.dark .heading-subtext span {
   color: #dbbbaf;
 }
+footer.dark .contact-button {
+  color: #181818;
+  background-color: #f0f0f0;
+}
 footer.dark .divider {
   background-color: #f0f0f0;
 }
