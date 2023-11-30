@@ -55,6 +55,9 @@ header {
                 .close-menu-button {
                     display: none;
                 };
+                &:hover {
+                    cursor: pointer;
+                };
             };
         };
         .nav-menu-container {

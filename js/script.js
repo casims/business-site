@@ -21,10 +21,13 @@ const navCont = {
     },
     toggleMenu: function() {
         const navTarget = document.getElementById('nav-container');
+        const body = document.querySelector('body');
         if (this.menuExpanded === true) {
             navTarget.classList.add('menu-open');
+            body.style.overflow = 'hidden';
         } else {
             navTarget.classList.remove('menu-open');
+            body.style.overflow = 'initial';
         };
     },
     accordHeightCollapsed: '5rem',

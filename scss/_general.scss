@@ -2,6 +2,7 @@
 
 body {
     position: relative;
+    overflow: hidden;
     main {
         background-color: $white;
         transition: background-color 0.3s ease;

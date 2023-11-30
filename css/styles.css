@@ -48,6 +48,7 @@ span.dark {
 
 body {
   position: relative;
+  overflow: hidden;
 }
 body main {
   background-color: #f0f0f0;
@@ -161,6 +162,9 @@ header #nav-container .nav-bar-container #nav-button svg path {
 }
 header #nav-container .nav-bar-container #nav-button .close-menu-button {
   display: none;
+}
+header #nav-container .nav-bar-container #nav-button:hover {
+  cursor: pointer;
 }
 header #nav-container .nav-menu-container {
   display: none;
