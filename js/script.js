@@ -2,6 +2,7 @@
 
 const navCont = {
     menuExpanded: false,
+    body: document.querySelector('body'),
     navListeners: function() {
         document.getElementById('nav-button').addEventListener('click', function() {
             navCont.menuExpanded = !navCont.menuExpanded;
@@ -9,6 +10,16 @@ const navCont = {
         });
         window.addEventListener('scroll', function() {
             navCont.navClassToggle();
+        });
+        const contactButtons = Array.from(document.getElementsByClassName('contact-button'));
+        console.log(contactButtons);
+        for (let contactButton of contactButtons) {
+            contactButton.addEventListener('click', function() {
+                navCont.openContactForm()
+            });
+        };
+        document.getElementById('close-button').addEventListener('click', function() {
+            navCont.closeContactForm()
         });
     },
     navClassToggle: function() {
@@ -21,14 +32,29 @@ const navCont = {
     },
     toggleMenu: function() {
         const navTarget = document.getElementById('nav-container');
-        const body = document.querySelector('body');
         if (this.menuExpanded === true) {
             navTarget.classList.add('menu-open');
-            body.style.overflow = 'hidden';
+            this.body.style.overflow = 'hidden';
         } else {
             navTarget.classList.remove('menu-open');
-            body.style.overflow = 'initial';
+            this.body.style.overflow = 'initial';
         };
+    },
+    contactModal: document.querySelector('div#contact-modal'),
+    contactForm: document.querySelector('form#contact-form'),
+    openContactForm: function() {
+        this.body.style.overflow = 'hidden';
+        this.contactModal.classList.add('open');
+        setTimeout(() => {
+            this.contactForm.classList.add('visible');
+        }, 300);
+    },
+    closeContactForm: function() {
+        this.body.style.overflow = 'initial';
+        this.contactForm.classList.remove('visible');
+        setTimeout(() => {
+            this.contactModal.classList.remove('open');
+        }, 150);
     },
     accordHeightCollapsed: '5rem',
     accordExpand: function(accord) {

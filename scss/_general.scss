@@ -65,7 +65,11 @@ a.button, li.submit button {
     height: 100vh;
     z-index: 100;
     background-color: $whitedark;
-    .close-button {
+    transition: width 0.3s ease;
+    &.open {
+        width: 100%;
+    };
+    #close-button {
         position: absolute;
         top: 1.5rem;
         right: 1.5rem;
@@ -78,6 +82,11 @@ a.button, li.submit button {
     };
     form {
         margin: 5rem 1.5rem;
+        opacity: 0;
+        transition: opacity 0.15s ease;
+        &.visible {
+            opacity: 1;
+        };
         ul {
             list-style: none;
             padding: 0;
