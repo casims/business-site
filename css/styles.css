@@ -19,7 +19,7 @@ h3 {
   font-size: 1.75rem;
 }
 
-p, a, button {
+p, a, button, label, input {
   font-family: "Open Sans", sans-serif;
   color: #181818;
 }
@@ -86,7 +86,7 @@ section.dark {
   cursor: pointer;
 }
 
-a.button {
+a.button, li.submit button {
   font-size: 1rem;
   text-transform: uppercase;
   color: #f0f0f0;
@@ -98,9 +98,72 @@ a.button {
   padding: 0.525rem 1.25rem;
 }
 
-.contact-button:hover, a.button:hover {
+.contact-button:hover, a.button:hover, li.submit button:hover {
   color: #f0f0f0;
   background-color: #a37e74;
+  cursor: pointer;
+}
+
+#contact-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0%;
+  padding: 0;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 100;
+  background-color: #e1e1e1;
+}
+#contact-modal .close-button {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+#contact-modal form {
+  margin: 5rem 1.5rem;
+}
+#contact-modal form ul {
+  list-style: none;
+  padding: 0;
+}
+#contact-modal form ul li {
+  margin-bottom: 1rem;
+}
+#contact-modal form ul li label {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+#contact-modal form ul li input {
+  width: 100%;
+  padding: 0.25rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px #a37e74 solid;
+}
+#contact-modal form ul li.name {
+  display: flex;
+}
+#contact-modal form ul li.name .first-name-wrapper {
+  width: 50%;
+  margin-right: 0.5rem;
+}
+#contact-modal form ul li.name .last-name-wrapper {
+  width: 50%;
+  margin-left: 0.5rem;
+}
+#contact-modal form ul li.submit {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
 }
 
 header {

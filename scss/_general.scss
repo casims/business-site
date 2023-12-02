@@ -44,12 +44,75 @@ section {
     };
 };
 
-a.button {
+a.button, li.submit button {
     @include button-styles; 
     padding: 0.525rem 1.25rem;
 };
 
-.contact-button:hover, a.button:hover {
+.contact-button:hover, a.button:hover, li.submit button:hover {
     color: $white;
     background-color: $colourdark;
+    cursor: pointer;
+};
+
+#contact-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 100;
+    background-color: $whitedark;
+    .close-button {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background-color: transparent;
+        border: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 1.1rem;
+        cursor: pointer;
+    };
+    form {
+        margin: 5rem 1.5rem;
+        ul {
+            list-style: none;
+            padding: 0;
+            li {
+                margin-bottom: 1rem;
+                label {
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: .25rem;
+                    font-size: .9rem;
+                }
+                input {
+                    width: 100%;
+                    padding: .25rem;
+                    background-color: transparent;
+                    border: none;
+                    border-bottom: 2px $colourdark solid;
+                };
+                &.name {
+                    display: flex;
+                    .first-name-wrapper {
+                        width: 50%;
+                        margin-right: .5rem;
+                    };
+                    .last-name-wrapper {
+                        width: 50%;
+                        margin-left: .5rem;
+                    };
+                };
+                &.submit {
+                    position: absolute;
+                    bottom: 1.5rem;
+                    right: 1.5rem;
+                }
+            };
+        };
+    }
 };
