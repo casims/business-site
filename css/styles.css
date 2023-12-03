@@ -46,6 +46,10 @@ span.dark {
   color: #dbbbaf;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
   overflow: hidden;

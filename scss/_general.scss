@@ -1,5 +1,9 @@
 @use 'variables' as *;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     position: relative;
     overflow: hidden;
