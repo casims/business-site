@@ -100,8 +100,8 @@ a.button, li.submit button {
 }
 
 .contact-button:hover, a.button:hover, li.submit button:hover {
-  color: #f0f0f0;
-  background-color: #a37e74;
+  color: #f0f0f0 !important;
+  background-color: #a37e74 !important;
   cursor: pointer;
 }
 

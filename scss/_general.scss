@@ -51,8 +51,8 @@ a.button, li.submit button {
 };
 
 .contact-button:hover, a.button:hover, li.submit button:hover {
-    color: $white;
-    background-color: $colourdark;
+    color: $white !important;
+    background-color: $colourdark !important;
     cursor: pointer;
 };
 
