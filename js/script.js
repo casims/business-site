@@ -1,8 +1,18 @@
 'use strict';
 
 const navCont = {
-    menuExpanded: false,
     body: document.querySelector('body'),
+    loadingScreen: document.querySelector('div#loading-screen'),
+    loadingListener: function() {
+        window.addEventListener('load', function() {
+            navCont.loadingScreen.className = 'loaded';
+            navCont.body.style.overflow = 'visible';
+            setTimeout(() => {
+                navCont.loadingScreen.style.display = 'none';
+            }, 300);
+        });
+    },
+    menuExpanded: false,
     navListeners: function() {
         document.getElementById('nav-button').addEventListener('click', function() {
             navCont.menuExpanded = !navCont.menuExpanded;
@@ -245,6 +255,13 @@ const navCont = {
 };
 
 window.onload = function() {
+    setTimeout(() => {
+        navCont.loadingScreen.className = 'loaded';
+        navCont.body.style.overflow = 'visible';
+        setTimeout(() => {
+            navCont.loadingScreen.style.display = 'none';
+        }, 300);
+    }, 300);
     navCont.navListeners();
     navCont.navClassToggle();
     navCont.pageChecker();

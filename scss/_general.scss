@@ -2,6 +2,7 @@
 
 body {
     position: relative;
+    overflow: hidden;
     main {
         background-color: $white;
         transition: background-color 0.3s ease;
@@ -97,7 +98,7 @@ a.button, li.submit button {
                     width: 100%;
                     margin-bottom: .25rem;
                     font-size: .9rem;
-                }
+                };
                 input {
                     width: 100%;
                     padding: .25rem;
@@ -120,8 +121,29 @@ a.button, li.submit button {
                     position: absolute;
                     bottom: 1.5rem;
                     right: 1.5rem;
-                }
+                };
             };
         };
-    }
+    };
+};
+
+#loading-screen {
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: $whitedark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+    svg {
+        height: 3.5rem;
+        width: 3.5rem;
+    };
+    &.loaded {
+        opacity: 0;
+    };
 };
