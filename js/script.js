@@ -21,8 +21,9 @@ const navCont = {
         window.addEventListener('scroll', function() {
             navCont.navClassToggle();
         });
+    },
+    contactListeners: function() {
         const contactButtons = Array.from(document.getElementsByClassName('contact-button'));
-        console.log(contactButtons);
         for (let contactButton of contactButtons) {
             contactButton.addEventListener('click', function() {
                 navCont.openContactForm()
@@ -155,8 +156,7 @@ const navCont = {
         </section>`,
     proPlanPage: `
         <section class="hero-section pro plans">
-            <p class="heading-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam nemo dolor beatae corporis.</p>
-            <p>Vitae nobis ducimus quas officia temporibus sint iusto sapiente corporis ipsa fuga, recusandae natus iure ad optio architecto ipsum quibusdam debitis adipisci. Minus nobis porro cum, itaque amet corporis facere iste? Eligendi, voluptates, mollitia dolores.</p>
+            <p class="heading-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque incidunt, sapiente sit iusto repellat fugit deserunt laboriosam eos ipsa distinctio, dolores laborum <span>consectetur praesentium, pariatur aliquid totam obcaecati.</span></p>
             <button type="button" class="contact-button">Get Started</button>
             <div id="plans-animation-container"></div>
         </section>
@@ -220,6 +220,7 @@ const navCont = {
             planHTMLTarget.className = 'hidden';
             setTimeout(() => {
                 planHTMLTarget.innerHTML = this.standardPlanPage;
+                this.contactListeners();
                 this.accordListeners();
                 planHTMLTarget.className = 'visible';
             }, 300);
@@ -233,6 +234,7 @@ const navCont = {
             planHTMLTarget.className = 'hidden';
             setTimeout(() => {
                 planHTMLTarget.innerHTML = this.proPlanPage;
+                this.contactListeners();
                 this.accordListeners();
                 planHTMLTarget.className = 'visible';
             }, 300);
@@ -264,6 +266,7 @@ window.onload = function() {
     }, 300);
     navCont.navListeners();
     navCont.navClassToggle();
+    navCont.contactListeners();
     navCont.pageChecker();
 };
 
