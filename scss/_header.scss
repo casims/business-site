@@ -191,3 +191,85 @@ header.stickied {
         };
     };
 };
+
+@media(min-width: 720px) {
+    header {
+        #nav-container {
+            padding: 1.5rem 2.5rem;
+        };
+    };
+};
+
+@media(min-width: 1000px) {
+    header {
+        #nav-container {
+            padding: 1.5rem 4.5rem;
+            display: flex;
+            .nav-bar-container {
+                width: auto;
+                #nav-button {
+                    display: none;
+                };
+            };
+            .nav-menu-container {
+                display: flex;
+                flex-grow: 1;
+                ul {
+                    flex-grow: 1;
+                    list-style: none;
+                    padding: 0;
+                    margin: auto;
+                    div {
+                        display: flex;
+                        align-self: center;
+                        li {
+                            margin-left: 4rem;
+                            a {
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                text-decoration: none;
+                                transition: all 0.3s ease;
+                                border-bottom: 2px solid transparent;
+                                &:hover {
+                                    border-color: $black;
+                                }
+                            };
+                            svg {
+                                display: none;
+                            };
+                        };
+                    };
+                };
+                .social-icons {
+                    display: none;
+                };
+            };
+        };
+    };
+    header.stickied {
+        #nav-container {
+            .nav-menu-container {
+                ul {
+                    div {
+                        li {
+                            a {
+                                color: $white;
+                                &:hover {
+                                    border-color: $white;
+                                };
+                            };
+                        };
+                    };
+                };
+            };
+        };
+    };
+};
+
+@media(min-width: 1400px) {
+    header {
+        #nav-container {
+            padding: 1.5rem 6rem;
+        };
+    };
+};

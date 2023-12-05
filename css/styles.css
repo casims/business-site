@@ -397,6 +397,68 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
   fill: #f0f0f0;
 }
 
+@media (min-width: 720px) {
+  header #nav-container {
+    padding: 1.5rem 2.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  header #nav-container {
+    padding: 1.5rem 4.5rem;
+    display: flex;
+  }
+  header #nav-container .nav-bar-container {
+    width: auto;
+  }
+  header #nav-container .nav-bar-container #nav-button {
+    display: none;
+  }
+  header #nav-container .nav-menu-container {
+    display: flex;
+    flex-grow: 1;
+  }
+  header #nav-container .nav-menu-container ul {
+    flex-grow: 1;
+    list-style: none;
+    padding: 0;
+    margin: auto;
+  }
+  header #nav-container .nav-menu-container ul div {
+    display: flex;
+    align-self: center;
+  }
+  header #nav-container .nav-menu-container ul div li {
+    margin-left: 4rem;
+  }
+  header #nav-container .nav-menu-container ul div li a {
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+  }
+  header #nav-container .nav-menu-container ul div li a:hover {
+    border-color: #181818;
+  }
+  header #nav-container .nav-menu-container ul div li svg {
+    display: none;
+  }
+  header #nav-container .nav-menu-container .social-icons {
+    display: none;
+  }
+
+  header.stickied #nav-container .nav-menu-container ul div li a {
+    color: #f0f0f0;
+  }
+  header.stickied #nav-container .nav-menu-container ul div li a:hover {
+    border-color: #f0f0f0;
+  }
+}
+@media (min-width: 1400px) {
+  header #nav-container {
+    padding: 1.5rem 6rem;
+  }
+}
 footer {
   padding: 5rem 1.5rem 3.5rem;
   background-color: #f0f0f0;
