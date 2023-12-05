@@ -61,7 +61,7 @@ span.dark {
   }
 
   .heading-subtext {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     line-height: 2.4rem;
   }
 }
@@ -527,15 +527,8 @@ footer.dark .site-map > li ul p {
 .hero-section.home .text-container p {
   max-width: 20rem;
 }
-.hero-section.home button {
-  width: 2rem;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  position: absolute;
-  bottom: 5rem;
-}
-.hero-section.home button svg {
+.hero-section.home svg {
+  margin-top: 1rem;
   height: 2rem;
   width: 2rem;
 }
