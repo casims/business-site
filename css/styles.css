@@ -809,7 +809,7 @@ footer.dark .site-map > li ul p {
   .main-section.home {
     display: grid;
     grid-template-areas: "ttl ttl" "vid acd";
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 40% 1fr;
     grid-gap: 5rem;
   }
   .main-section.home h2, .main-section.home .heading-subtext {

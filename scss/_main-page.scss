@@ -215,7 +215,7 @@
         grid-template-areas: 
             "ttl ttl"
             "vid acd";
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 40% 1fr;
         grid-gap: 5rem;
         h2, .heading-subtext {
             grid-area: ttl;
