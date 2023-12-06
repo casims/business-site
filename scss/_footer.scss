@@ -150,6 +150,10 @@ footer.dark {
             grid-template-columns: 24.5rem 1fr;
             .site-map {
                 justify-self: center;
+                &>li {
+                    margin-right: 4rem;
+                    margin-left: 4rem;
+                }
                 p {
                     font-size: 0.9rem;
                 };

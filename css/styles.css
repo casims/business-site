@@ -604,6 +604,10 @@ footer.dark .site-map > li ul p {
   footer .upper-footer .site-map {
     justify-self: center;
   }
+  footer .upper-footer .site-map > li {
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
   footer .upper-footer .site-map p {
     font-size: 0.9rem;
   }
