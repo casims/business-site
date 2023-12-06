@@ -136,6 +136,11 @@ const navCont = {
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, architecto saepe in inventore aliquam impedit ad praesentium, non optio vero unde voluptatum nostrum, culpa quae. Repellendus, debitis soluta. Voluptatibus, sapiente.</p>
         </section>
         <section class="features-section plans dark">
+            <div class="video-wrapper">
+                <video autoplay loop muted preload>
+                    <source src="media/videos/city_pan.mp4" type="video/mp4">
+                </video> 
+            </div>
             <ul id="plans-expandable-list">
                 <li class="accord">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 22h-24l12-20z"/></svg>
@@ -164,13 +169,13 @@ const navCont = {
             <h3>Pro Plan</h3>
             <p class="heading-subtext">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam blanditiis nisi veritatis odio explicabo.</p>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, architecto saepe in inventore aliquam impedit ad praesentium, non optio vero unde voluptatum nostrum, culpa quae. Repellendus, debitis soluta. Voluptatibus, sapiente.</p>
+        </section>
+        <section class="features-section pro plans">
             <div class="video-wrapper">
                 <video autoplay loop muted preload>
                     <source src="media/videos/city_pan.mp4" type="video/mp4">
                 </video> 
             </div>
-        </section>
-        <section class="features-section pro plans">
             <ul id="plans-expandable-list">
                 <li class="accord">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 22h-24l12-20z"/></svg>
@@ -188,6 +193,8 @@ const navCont = {
                     <p>Nam finibus tellus nec lectus ultrices elementum. Proin tortor massa, ultricies in enim ut, scelerisque laoreet tortor. Cras quis suscipit nulla. Phasellus efficitur eros non sagittis facilisis. Quisque molestie lectus a blandit bibendum. Pellentesque ultricies sapien at ex efficitur efficitur. Quisque eget turpis quam.</p>
                 </li>
             </ul>
+        </section>
+        <section class="info-section pro plans">
             <p class="heading-subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores a esse <span>eligendi magni expedita natus.</span></p>
             <ul class="features-list plans">
                 <li>
