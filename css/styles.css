@@ -1181,7 +1181,7 @@ footer.dark .site-map > li ul p {
 #faqs-expandable-list .accord svg {
   position: absolute;
   right: 0;
-  top: 1rem;
+  top: 0;
   height: 2rem;
   transition: transform 0.3s ease;
   z-index: 0;
@@ -1193,7 +1193,8 @@ footer.dark .site-map > li ul p {
 #faqs-expandable-list .accord p:last-child {
   color: #c8c8c8;
   margin-bottom: 1rem;
-  transition: color 0.3s ease;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 #faqs-expandable-list .accord.expanded {
   border-color: #f0f0f0;
@@ -1207,10 +1208,66 @@ footer.dark .site-map > li ul p {
 #faqs-expandable-list .accord.expanded svg path {
   fill: #f0f0f0;
 }
+#faqs-expandable-list .accord.expanded p {
+  opacity: 1;
+}
 #faqs-expandable-list .accord.expanded p:last-child {
   color: #f0f0f0;
+  opacity: 1;
 }
 
+@media (min-width: 720px) {
+  .hero-section.services .hero-card.services {
+    height: 28rem;
+    background-position-y: 90%;
+  }
+
+  .main-section.services .bullet-points ul {
+    margin-top: 4rem;
+  }
+  .main-section.services .bullet-points ul li {
+    max-width: 90%;
+  }
+
+  .faqs {
+    margin-top: 3.5rem;
+  }
+}
+@media (min-width: 1000px) {
+  .hero-section.services .hero-card.services {
+    margin: 0 -3rem;
+    padding: 3.5rem 3rem;
+    background-position-y: 85%;
+  }
+
+  .main-section.services .bullet-points ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+
+  .faqs {
+    display: grid;
+    grid-template-columns: 8rem 1fr;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-section.services .hero-card.services {
+    height: 32rem;
+    background-position-y: 80%;
+  }
+  .hero-section.services .hero-card.services p {
+    max-width: 75%;
+  }
+
+  .main-section.services .bullet-points .heading-subtext {
+    max-width: 50%;
+  }
+
+  .faqs {
+    grid-template-columns: 20% 1fr;
+  }
+}
 .hero-section.about {
   background-color: #181818;
   padding-top: 0;
