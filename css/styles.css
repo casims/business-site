@@ -1370,4 +1370,63 @@ footer.dark .site-map > li ul p {
   margin: 0.25rem 0 0;
 }
 
+@media (min-width: 720px) {
+  .hero-section.about .hero-card.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 26rem;
+    background-position: left bottom 30%;
+  }
+  .hero-section.about .hero-card.about h2 {
+    margin-bottom: 5rem;
+  }
+
+  .main-section.about .values-section {
+    padding-bottom: 2rem;
+  }
+  .main-section.about ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  .main-section.about ul li {
+    margin-bottom: 0;
+  }
+
+  .team ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+}
+@media (min-width: 1000px) {
+  .hero-section.about .hero-card.about {
+    margin: 0 -3rem;
+    padding: 3.5rem 3rem;
+    background-position: left bottom 25%;
+  }
+
+  .main-section.about .heading-subtext {
+    width: 80%;
+  }
+  .main-section.about .stats-section ul, .main-section.about .values-section ul {
+    padding-left: 8rem;
+  }
+  .main-section.about .team ul {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 0;
+  }
+  .main-section.about .team ul li {
+    width: 12rem;
+    margin-right: 2rem;
+  }
+}
+@media (min-width: 1400px) {
+  .hero-section.about .hero-card.about {
+    background-position: left bottom 28%;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
