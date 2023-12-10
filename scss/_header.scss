@@ -303,7 +303,7 @@ header.stickied {
 @media(min-width: 1400px) {
     header {
         #nav-container {
-            padding: 1.5rem 6rem;
+            padding: 1.5rem calc(50% - 39rem);
         };
     };
 };

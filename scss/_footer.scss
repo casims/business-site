@@ -144,7 +144,7 @@ footer.dark {
 
 @media(min-width: 1400px) {
     footer {
-        padding: 5rem 6rem 3.5rem;
+        padding: 5rem calc(50% - 39rem) 3.5rem;
         .upper-footer {
             display: grid;
             grid-template-columns: 24.5rem 1fr;

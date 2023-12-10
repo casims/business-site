@@ -232,7 +232,7 @@ a.button, li.submit button {
 }
 @media (min-width: 1400px) {
   body main > section {
-    padding: 3.5rem 6rem 2rem;
+    padding: 3.5rem calc(50% - 39rem) 2rem;
   }
 }
 header {
@@ -473,7 +473,7 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
 }
 @media (min-width: 1400px) {
   header #nav-container {
-    padding: 1.5rem 6rem;
+    padding: 1.5rem calc(50% - 39rem);
   }
 }
 footer {
@@ -612,7 +612,7 @@ footer.dark .site-map > li ul p {
 }
 @media (min-width: 1400px) {
   footer {
-    padding: 5rem 6rem 3.5rem;
+    padding: 5rem calc(50% - 39rem) 3.5rem;
   }
   footer .upper-footer {
     display: grid;
@@ -1111,7 +1111,7 @@ footer.dark .site-map > li ul p {
 }
 @media (min-width: 1400px) {
   #plan-container section {
-    padding: 3.5rem 6rem 2rem;
+    padding: 3.5rem calc(50% - 39rem) 2rem;
   }
   #plan-container .info-section.pro.plans {
     grid-template-columns: 25rem 1fr;
