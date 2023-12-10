@@ -367,6 +367,10 @@ header div#nav-container.menu-open .nav-menu-container .social-media-container {
   align-items: center;
   justify-content: space-between;
 }
+header div#nav-container.menu-open .nav-menu-container .social-media-container button {
+  background-color: #f0f0f0;
+  color: #181818;
+}
 header div#nav-container.menu-open .nav-menu-container .social-media-container .social-icons svg {
   margin-left: 1rem;
 }
@@ -446,12 +450,25 @@ header.stickied #nav-container .nav-bar-container #nav-button svg path {
   header #nav-container .nav-menu-container .social-icons {
     display: none;
   }
-
+  header.dark #nav-container .nav-menu-container ul div li a {
+    color: #f0f0f0;
+  }
+  header.dark #nav-container .nav-menu-container ul div li a:hover {
+    border-color: #f0f0f0;
+  }
+  header.dark #nav-container .nav-menu-container .social-media-container button {
+    background-color: #f0f0f0;
+    color: #181818;
+  }
   header.stickied #nav-container .nav-menu-container ul div li a {
     color: #f0f0f0;
   }
   header.stickied #nav-container .nav-menu-container ul div li a:hover {
     border-color: #f0f0f0;
+  }
+  header.stickied #nav-container .nav-menu-container .social-media-container button {
+    background-color: #f0f0f0;
+    color: #181818;
   }
 }
 @media (min-width: 1400px) {

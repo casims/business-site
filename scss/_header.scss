@@ -139,6 +139,10 @@ header div#nav-container.menu-open {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            button {
+                background-color: $white;
+                color: $black;
+            };
             .social-icons {
                 svg {
                     margin-left: 1rem;
@@ -245,19 +249,49 @@ header.stickied {
                 };
             };
         };
-    };
-    header.stickied {
-        #nav-container {
-            .nav-menu-container {
-                ul {
-                    div {
-                        li {
-                            a {
-                                color: $white;
-                                &:hover {
-                                    border-color: $white;
+        &.dark {
+            #nav-container {
+                .nav-menu-container {
+                    ul {
+                        div {
+                            li {
+                                a {
+                                    color: $white;
+                                    &:hover {
+                                        border-color: $white;
+                                    };
                                 };
                             };
+                        };
+                    };
+                    .social-media-container {
+                        button {
+                            background-color: $white;
+                            color: $black;
+                        };
+                    };
+                };
+            };
+        };
+        &.stickied {
+            #nav-container {
+                .nav-menu-container {
+                    ul {
+                        div {
+                            li {
+                                a {
+                                    color: $white;
+                                    &:hover {
+                                        border-color: $white;
+                                    };
+                                };
+                            };
+                        };
+                    };
+                    .social-media-container {
+                        button {
+                            background-color: $white;
+                            color: $black;
                         };
                     };
                 };
