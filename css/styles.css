@@ -194,9 +194,9 @@ a.button, li.submit button {
   margin-left: 0.5rem;
 }
 #contact-modal form ul li.submit {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  text-align: end;
+  position: relative;
+  bottom: -6rem;
 }
 
 #loading-screen {
@@ -224,15 +224,32 @@ a.button, li.submit button {
   body main > section {
     padding: 3.5rem 2.5rem 2rem;
   }
+  body #contact-modal.open {
+    width: 90%;
+  }
 }
 @media (min-width: 1000px) {
   body main > section {
     padding: 3.5rem 4.5rem 2rem;
   }
+  body #contact-modal form {
+    margin: 5rem 10rem;
+  }
+  body #contact-modal.open {
+    width: 75%;
+  }
 }
 @media (min-width: 1400px) {
   body main > section {
     padding: 3.5rem calc(50% - 39rem) 2rem;
+  }
+  body #contact-modal.open {
+    width: 50%;
+  }
+}
+@media (min-width: 1900px) {
+  body #contact-modal.open {
+    width: 35%;
   }
 }
 header {

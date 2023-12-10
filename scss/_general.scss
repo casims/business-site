@@ -122,9 +122,9 @@ a.button, li.submit button {
                     };
                 };
                 &.submit {
-                    position: absolute;
-                    bottom: 1.5rem;
-                    right: 1.5rem;
+                    text-align: end;
+                    position: relative;
+                    bottom: -6rem;
                 };
             };
         };
@@ -159,6 +159,9 @@ a.button, li.submit button {
                 padding: 3.5rem 2.5rem 2rem;
             };
         };
+        #contact-modal.open {
+            width: 90%;
+        };
     };
 };
 
@@ -167,6 +170,14 @@ a.button, li.submit button {
         main {
             &>section {
                 padding: 3.5rem 4.5rem 2rem;
+            };
+        };
+        #contact-modal {
+            form {
+                margin: 5rem 10rem; 
+            }
+            &.open {
+                width: 75%;
             };
         };
     };
@@ -178,6 +189,17 @@ a.button, li.submit button {
             &>section {
                 padding: 3.5rem calc(50% - 39rem) 2rem;
             };
+        };
+        #contact-modal.open {
+            width: 50%;
+        };
+    };
+};
+
+@media(min-width: 1900px) {
+    body {
+        #contact-modal.open {
+            width: 35%;
         };
     };
 };
