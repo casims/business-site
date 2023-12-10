@@ -383,6 +383,7 @@ header div#nav-container.menu-open .nav-menu-container .social-media-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
 header div#nav-container.menu-open .nav-menu-container .social-media-container button {
   background-color: #f0f0f0;
